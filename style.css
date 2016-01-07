@@ -5,7 +5,7 @@
 }
 
 .positioner {
-	width: 970px;
+	width: 1070px;
 	margin: 0 auto;
 }
 
@@ -67,6 +67,14 @@ header,footer {
 	color: white;
 }
 
+footer {
+	text-align: center;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .banner-footer {
 	background: #333;
 }
@@ -83,12 +91,14 @@ header,footer {
 
 .info {
 	background: honeydew;
+	align-self: flex-start;
 	width: 160px;
 	order: -1;
 }
 
 .sidebar {
 	background: peachpuff;
+	align-self: flex-start;
 	width: 160px;
 }
 
@@ -114,22 +124,20 @@ header,footer {
 }
 
 @media (max-width: 980px){
-
-	header {
-		flex-direction: column;
-	}
-
 	.body{
 		flex-direction: column;
 	}
 
 	.grid {
 		flex-direction: column;
-		flex: 1;
 	}
 
 	.grid-item {
 		flex: 0 0 100%;
+	}
+
+	.positioner {
+		width: 96%;
 	}
 	
 	.info, .sidebar {
